@@ -2,7 +2,7 @@ export const DEFAULT_TIME = 25 * 60; // 25 минут
 export const POMODORO_STATE_KEY= 'pomodoroState';
 export const ONE_SECOND = 1000;
 
-export const DURATIONS = [1, 15, 25];
+export const DURATIONS = [10, 15, 25];
 
 export const BREAK_TIME = 5 * 60;
 export const THEME_MODE_KEY = "themeMode";
