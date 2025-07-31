@@ -1,8 +1,7 @@
 const CACHE_NAME = 'pomodoro-cache-v1';
 const URLS_TO_CACHE = [
   "/pomodoroTimer/",
-  "/pomodoroTimer/index.html",
-  "/pomodoroTimer/manifest.webmanifest",
+  "/pomodoroTimer/site.webmanifest",
 ];
 
 self.addEventListener('install', (event) => {
