@@ -12,6 +12,7 @@ export const PomodoroDurationSelectorItems = () => {
             {DURATIONS.map((duration, index) => {
                 return (
                     <Button
+                        className={styles.durationBtn}
                         key={index}
                         label={`${duration} min`}
                         onClick={() => actions.setDuration(duration * 60)}

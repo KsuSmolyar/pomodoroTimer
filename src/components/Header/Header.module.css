@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     background-color: var(--backgroundColor);
+    margin-bottom: 20px;
 }
 
 .container {
@@ -31,12 +32,16 @@
 
 @media (max-width: 768px) {
     .header {
-        padding: 8px 24px 24px 8px;
+        padding: 8px 0;
+    }
+
+    .container {
+        padding-inline: 8px;
     }
 
     .container > h1 {
         font-size: 20px;
-        padding-inline: 8px;
+        
     }
 
     .icon {

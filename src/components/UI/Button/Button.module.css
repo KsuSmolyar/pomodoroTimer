@@ -12,7 +12,7 @@
 
 @media (max-width: 768px) {
     .button {
-        padding: 0.5em;
-        font-size: 12px;
+        padding: 8px 16px;
+        font-size: 18px;
     }
 }

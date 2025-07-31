@@ -10,6 +10,13 @@
     gap: 10px;
 }
 
+.controlBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 .title {
     color: var(--colorPurple);
     font-weight: 600;
@@ -38,5 +45,9 @@
 @media (max-width: 768px) {
     .timer {
         padding: 0;
+    }
+
+    .controls {
+        grid-template-columns: 1fr 1fr;
     }
 }

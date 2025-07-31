@@ -10,11 +10,13 @@ export const PomodoroDurationControls = ({
     return (
         <div className={styles.container}>
             <Button 
-                label={isVisible ? "📃 Выбор из вариантов" : "✏️ Ввести вручную"}
+                className={styles.controlBtn}
+                label={isVisible ? <><span>📃</span><span>Выбор из вариантов</span></>  : <><span>✏️</span><span>Ввести вручную</span></>}
                 onClick={toggleVisible}
             />
             <Button
-                label={"⚙️ Настроить цикл"}
+                className={styles.controlBtn}
+                label={<><span>⚙️</span><span>Настроить цикл</span></>}
                 onClick={() => setIsSettingsOpen(true)}
             />
         </div>

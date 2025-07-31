@@ -20,3 +20,14 @@
     display: flex;
     gap: 14px;
 }
+
+.controlBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.durationBtn {
+    font-size: 20px;
+}
