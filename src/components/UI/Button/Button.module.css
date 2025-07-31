@@ -1,0 +1,18 @@
+.button.primary {
+    background-color: var(--colorGray);
+}
+
+.button.secondary {
+    background-color: var(--colorLightBlue);
+}
+
+.button[disabled] {
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .button {
+        padding: 0.5em;
+        font-size: 12px;
+    }
+}

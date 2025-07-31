@@ -1,0 +1,50 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    background: var(--colorBaseWhite);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--colorBlack80);
+    min-width: 320px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--colorDarkGray);
+}
+
+.label input[type="number"] {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid var(--colorGray1);
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.label input[type="number"]:focus {
+    border-color: var(--colorGray2);
+}
+
+.checkboxRow input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .form {
+       min-width: inherit; 
+    }
+}

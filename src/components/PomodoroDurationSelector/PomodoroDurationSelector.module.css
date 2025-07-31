@@ -1,0 +1,22 @@
+.selector {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    gap: 14px;
+}
+
+.customInput {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 14px;
+}
+
+.container {
+    display: flex;
+    gap: 14px;
+}

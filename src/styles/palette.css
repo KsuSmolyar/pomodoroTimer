@@ -1,0 +1,23 @@
+:root {
+    --colorBaseWhite: #fff;
+    --colorBaseBlack: #222;
+    --colorGray: #444;
+    --colorDarkGray: #374151;
+    --colorGray1: #d1d5db;
+    --colorGray2: #4f46e5;
+    --colorLightGray: #ddd;
+    --colorBlue: #0000ff;
+    --colorLightBlue: #3498db;
+    --colorBlack10: rgba(0, 0, 0, 0.1);
+    --colorBlack20: rgba(0,0,0,0.2);
+    --colorBlack30: rgba(0,0,0,0.3);
+    --colorBlack50: rgba(0, 0, 0, 0.5);
+    --colorBlack80: rgba(0, 0, 0, 0.08);
+    --colorGreen: #4caf50;
+    --colorYellow: #f1c40f;
+    --colorPastelYellow: #f6e47cfc;
+    --colorPurple: #646cff;
+    --colorGrayBlue: #213547;
+    --colorDimGray: #888;
+    --colorDeepCerulean: #114d74;
+}

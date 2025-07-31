@@ -1,0 +1,22 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.empty {
+    text-align: center;
+    color: var(--colorDimGray);
+}
+
+.chart {
+    height: 300px;
+}

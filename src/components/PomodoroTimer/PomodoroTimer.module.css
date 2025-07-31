@@ -1,0 +1,42 @@
+.timer {
+    display: grid;
+    padding: 40px;
+    gap: 14px;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.title {
+    color: var(--colorPurple);
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.skipBreak {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    grid-column: 2;
+}
+
+.skipBreak.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.statsToggler {
+    width: fit-content;
+    justify-self: center;
+}
+
+@media (max-width: 768px) {
+    .timer {
+        padding: 0;
+    }
+}

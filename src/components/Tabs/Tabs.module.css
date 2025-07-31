@@ -1,0 +1,14 @@
+.tabsContainer {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+}
+
+.tab {
+    font-size: 16px;
+}
+
+.tab.active {
+    background-color: var(--colorLightBlue);
+    font-weight: 600;
+}
