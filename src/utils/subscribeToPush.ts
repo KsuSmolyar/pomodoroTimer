@@ -13,6 +13,8 @@ export async function subscribeToPush() {
   });
 
   console.log('Подписка получена:', subscription);
+  // сохраняем локально
+  localStorage.setItem('pushSubscription', JSON.stringify(subscription));
 
   // const serverUrl =
   //   import.meta.env.MODE === "development"
