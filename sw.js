@@ -1,9 +1,8 @@
 const CACHE_NAME = 'pomodoro-cache-v1';
 const URLS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.json'
-  // можно добавить свои бандлы и иконки
+  "/pomodoroTimer/",
+  "/pomodoroTimer/index.html",
+  "/pomodoroTimer/manifest.webmanifest",
 ];
 
 self.addEventListener('install', (event) => {
@@ -28,5 +27,15 @@ self.addEventListener('fetch', (event) => {
     caches.match(event.request).then((cached) =>
       cached || fetch(event.request)
     )
+  );
+});
+
+self.addEventListener('push', (event) => {
+  const data = event.data?.json() || { title: 'Pomodoro', body: 'Time is up!' };
+  event.waitUntil(
+    self.registration.showNotification(data.title, {
+      body: data.body,
+      icon: '/icons/icon-192.png',
+    })
   );
 });
