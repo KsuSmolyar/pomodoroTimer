@@ -15,13 +15,28 @@ export const ThemeToggler = () => {
         }
     }
 
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLLabelElement>) => {
+        if(e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            handleChangeTheme();
+        }
+    }
+
     useEffect(() => {
         document.documentElement.dataset.theme = theme
         localStorage.setItem(THEME_MODE_KEY, theme)
     }, [theme])
 
     return (
-        <label className={styles.label} aria-label="Сменить тему" title="Сменить тему">
+        <label 
+            className={styles.label} 
+            aria-label="Сменить тему" 
+            title="Сменить тему"
+            role="switch"
+            aria-checked={theme === themeModes.dark}
+            tabIndex={0}
+            onKeyDown={handleKeyDown}
+        >
             <input
                 type="checkbox"
                 name="themeInput"

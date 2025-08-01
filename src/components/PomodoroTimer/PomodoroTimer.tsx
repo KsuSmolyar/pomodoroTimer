@@ -11,11 +11,12 @@ import { usePomodoroSettings } from "../../store/pomodoroSettingsStore/context";
 import { useToggle } from "../../hooks/useToggle";
 import { Button } from "../UI/Button";
 import { PomodoroDurationSelector } from "../PomodoroDurationSelector";
+import { Modal } from "../Modal";
 
 export const PomodoroTimer = () => {
     const {store, actions } = usePomodoroTimerContext();
     const { settings } = usePomodoroSettings();
-    const {value: isStatsVisible, toggle: toggleStatsVisible} = useToggle(false)
+    const {value: isStatsVisible, toggle: toggleStatsVisible, setValue: setIsStatsVisible} = useToggle(false)
 
     usePomodoroTick(store.isRunning, () => actions.tick(settings));
     usePomodoroNotifications(store.timeLeft);
@@ -41,7 +42,10 @@ export const PomodoroTimer = () => {
                 className={styles.statsToggler}
                 onClick={toggleStatsVisible}
             />
-            {isStatsVisible && <Stats />}
+            { isStatsVisible && <Modal onClose={() => setIsStatsVisible(false)}>
+                    <Stats />
+                </Modal>
+            }
         </div>
     )
 }

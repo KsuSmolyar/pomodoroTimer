@@ -7,6 +7,7 @@ export const Modal = ({children, onClose}: ModalProps) => {
 
     return createPortal(<div className={styles.backdrop} onClick={onClose}>
         <div className={styles.content} onClick={e => e.stopPropagation()}>
+            <button className={styles.closeBtn} onClick={onClose}>❌</button>
             {children}
         </div>
     </div>, modalEl)

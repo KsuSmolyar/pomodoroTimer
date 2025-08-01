@@ -67,7 +67,7 @@ export const Stats = () => {
                         <XAxis dataKey="label" />
                         <YAxis allowDecimals={false} />
                         <Tooltip content={<CustomTooltip />}/>
-                        <Bar dataKey="value" fill="#4F46E5" radius={[4, 4, 0, 0]} />
+                        <Bar dataKey="value" fill="#4F46E5" radius={[2, 2, 0, 0]}/>
                         </BarChart>
                     </ResponsiveContainer>
                 </div>
